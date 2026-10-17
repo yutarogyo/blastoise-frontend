@@ -1,0 +1,349 @@
+/* Layout.css: styles for the matching screen or shared components. */
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.brand {
+  display: flex; align-items: center; gap: 12px; padding: 0 7px; font: 800 23px Manrope,sans-serif;
+  letter-spacing: -0.8px;
+}
+
+.brand-dot {
+  color: #42c1cc;
+}
+
+.clinic-switch {
+  display: flex; align-items: center; gap: 10px; margin: 31px 0 30px; padding: 13px 10px;
+  border: 1px solid #ffffff1e; background: #ffffff09; border-radius: 9px;
+}
+
+.clinic-mark {
+  width: 34px; height: 34px; display: grid; place-items: center; border-radius: 8px; background: #ffffff12;
+  color: #55c3cc;
+}
+
+.clinic-switch>span:nth-child(2) {
+  flex: 1;
+}
+
+.clinic-switch b {
+  display: block; font-size: 13px;
+}
+
+.user-card b {
+  display: block; font-size: 13px;
+}
+
+.clinic-switch small {
+  display: block; margin-top: 4px; color: #b6b5c7; font-size: 11px;
+}
+
+.user-card small {
+  display: block; margin-top: 4px; color: #b6b5c7; font-size: 11px;
+}
+
+.clinic-switch>svg {
+  color: #b6b5c7;
+}
+
+.nav-caption {
+  margin: 0 0 10px; padding: 0 11px; color: #aaa9be; font-size: 10px; font-weight: 700; letter-spacing: 1.5px;
+}
+
+.sidebar nav {
+  display: grid; gap: 5px;
+}
+
+.nav-item {
+  position: relative; width: 100%; display: flex; align-items: center; gap: 12px; padding: 12px 11px;
+  border: 0; border-radius: 7px; background: transparent; color: #d0cfdd; text-align: left; font-size: 13px;
+}
+
+.nav-item.active:before {
+  position: absolute; content: ""; left: -18px; width: 3px; height: 25px; border-radius: 0 3px 3px 0;
+  background: #31adba;
+}
+
+.sidebar-foot {
+  margin-top: auto;
+}
+
+.user-card {
+  display: flex; align-items: center; gap: 10px; border-top: 1px solid #ffffff1d; padding: 17px 2px 0;
+}
+
+.user-avatar {
+  display: grid; place-items: center; border-radius: 50%; background: #e4f5f5; color: #3b6f76;
+  font-size: 12px; font-weight: 700; width: 34px; height: 34px;
+}
+
+.crumb {
+  display: flex; align-items: center; gap: 12px; color: #89889b; font-size: 12px;
+}
+
+.crumb span {
+  color: #c7c6cf;
+}
+
+.crumb b {
+  color: #39384f; font-weight: 600;
+}
+
+.top-actions {
+  display: flex; align-items: center; gap: 15px;
+}
+
+.demo-pill {
+  display: flex; align-items: center; gap: 7px; color: #6f6d84; font-size: 11px;
+}
+
+.demo-pill i {
+  width: 7px; height: 7px; border-radius: 50%; background: #46a878;
+}
+
+.top-avatar {
+  display: grid; place-items: center; border-radius: 50%; background: #e4f5f5; color: #3b6f76;
+  font-size: 12px; font-weight: 700; width: 33px; height: 33px;
+}
+
+@media (min-width:1500px) {
+  .page-content {
+    padding-top: 39px;
+  }
+
+}
+
+@media (max-width:1100px) {
+  .sidebar {
+    width: 225px;
+  }
+
+  .main-area {
+    margin-left: 225px;
+  }
+
+  .page-content {
+    padding-inline: 23px;
+  }
+
+  .topbar {
+    padding-inline: 23px;
+  }
+
+}
+
+@media (max-width:760px) {
+  .sidebar {
+    position: static; width: auto; height: auto; padding: 11px 15px; flex-direction: row; align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand {
+    font-size: 18px; gap: 9px;
+  }
+
+  .brand-mark {
+    width: 32px; height: 32px; box-shadow: 0 0 0 4px #24a9b81c;
+  }
+
+  .brand-mark svg {
+    width: 19px;
+  }
+
+  .sidebar nav {
+    gap: 3px;
+  }
+
+  .nav-item {
+    padding: 9px;
+  }
+
+  .nav-item span {
+    display: none;
+  }
+
+  .main-area {
+    margin: 0;
+  }
+
+  .topbar {
+    height: 51px; padding-inline: 16px;
+  }
+
+  .page-content {
+    padding: 22px 15px 0;
+  }
+
+}
+
+@media (max-width:480px) {
+  .footer {
+    flex-direction: column;
+  }
+
+}
+
+.brand-mark {
+  border-radius: 50%; background: #24a9b8; box-shadow: 0 0 0 7px #24a9b81c; width: 40px; height: 40px;
+  flex: 0 0 40px; overflow: hidden; display: grid; place-items: center;
+}
+
+.clinic-portal {
+  padding: 10px 14px;
+}
+
+@media (max-width:760px) {
+  .clinic-portal {
+    padding: 8px 10px; font-size: 10px;
+  }
+
+}
+
+.page-content>.page-heading {
+  animation-delay: 0.02s;
+}
+
+.nav-item:hover {
+  background: #ffffff0e; color: #fff; transform: translateX(2px);
+}
+
+.sidebar {
+  position: fixed; inset: 0 auto 0 0; width: 260px; padding: 27px 18px 18px; color: #f8f7ff; display: flex;
+  flex-direction: column; z-index: 5;
+  transition: margin-left 0.38s cubic-bezier(0.2, 0.75, 0.25, 1),transform 0.38s cubic-bezier(0.2, 0.75, 0.25, 1),opacity 0.28s;
+  background: #143b42;
+}
+
+.brand-logo {
+  display: block; width: 40px; height: 40px; object-fit: contain; border-radius: 50%;
+}
+
+.nav-item.active {
+  font-weight: 600; background: #dbf3ed; color: #154f49;
+}
+
+.topbar {
+  height: 68px; justify-content: space-between; padding: 0 35px; border-bottom: 1px solid #e9e8ee;
+  display: flex; align-items: center; background: #ffffffed;
+}
+
+.footer {
+  display: flex; justify-content: space-between; padding: 24px 0; color: #9998a5; font-size: 10px; gap: 16px;
+  flex-wrap: wrap;
+}
+
+.main-area {
+  min-height: 100vh; margin-left: 260px;
+  transition: margin-left 0.38s cubic-bezier(0.2, 0.75, 0.25, 1),transform 0.38s cubic-bezier(0.2, 0.75, 0.25, 1),opacity 0.28s;
+  min-width: 0;
+}
+
+.page-content {
+  max-width: 1440px; margin: 0 auto; padding: 32px 35px 0; width: 100%;
+}
+
+@media (min-width:761px) and (max-width:1150px) {
+  .sidebar {
+    width: 220px; padding-inline: 14px;
+  }
+
+  .main-area {
+    margin-left: 220px;
+  }
+
+  .page-content {
+    padding: 26px 22px 0;
+  }
+
+  .brand {
+    font-size: 21px;
+  }
+
+}
+
+@media (max-width:760px) {
+  .sidebar {
+    position: relative; inset: auto; width: 100%; padding: 16px; display: flex;
+  }
+
+  .brand {
+    font-size: 21px;
+  }
+
+  .clinic-switch {
+    display: none;
+  }
+
+  .nav-caption {
+    display: none;
+  }
+
+  .sidebar-foot {
+    display: none;
+  }
+
+  .sidebar nav {
+    display: flex; overflow-x: auto; gap: 7px; margin-top: 17px; padding-bottom: 4px;
+  }
+
+  .nav-item {
+    width: auto; flex-shrink: 0; padding: 10px; font-size: 11px;
+  }
+
+  .nav-item span {
+    display: inline;
+  }
+
+  .nav-item.active:before {
+    display: none;
+  }
+
+  .main-area {
+    margin-left: 0;
+  }
+
+  .topbar {
+    height: 58px; padding: 0 16px;
+  }
+
+  .crumb {
+    font-size: 10px; gap: 7px;
+  }
+
+  .top-actions {
+    gap: 8px;
+  }
+
+  .demo-pill {
+    font-size: 10px;
+  }
+
+  .page-content {
+    padding: 24px 16px 0;
+  }
+
+}
+
+@media (max-width:440px) {
+  .demo-pill {
+    display: none;
+  }
+
+}
+
+@media (max-width:760px) {
+  .sidebar {
+    flex-direction: column; align-items: stretch;
+  }
+
+  .sidebar nav {
+    width: 100%; max-width: 100%;
+  }
+
+  .brand-mark {
+    width: 40px; height: 40px;
+  }
+
+}
+

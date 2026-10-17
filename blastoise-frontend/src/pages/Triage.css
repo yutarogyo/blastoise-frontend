@@ -1,0 +1,152 @@
+/* Triage.css: styles for the matching screen or shared components. */
+
+.triage-heading {
+  margin-bottom: 18px;
+}
+
+.prototype-chip {
+  display: flex; align-items: center; gap: 7px; padding: 7px 10px; border-radius: 20px; background: #e7f5f5;
+  color: #397e86; font-size: 10px; font-weight: 600;
+}
+
+.triage-layout {
+  display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(220px, 0.8fr); gap: 15px; align-items: start;
+}
+
+.triage-form {
+  padding-bottom: 18px; overflow: hidden;
+}
+
+.triage-form .panel-head h2 {
+  display: flex; align-items: center; gap: 8px;
+}
+
+.triage-form form {
+  display: grid; gap: 13px; padding: 0 20px;
+}
+
+.triage-form label {
+  display: grid; gap: 6px; color: #55546d; font-size: 11px; font-weight: 600;
+}
+
+.triage-form select {
+  width: 100%; padding: 10px; border: 1px solid #dedee6; border-radius: 6px; background: #fff; color: #35344a;
+  font-size: 11px;
+}
+
+.triage-form textarea {
+  width: 100%; padding: 10px; border: 1px solid #dedee6; border-radius: 6px; background: #fff; color: #35344a;
+  font-size: 11px; min-height: 82px; resize: vertical;
+}
+
+.triage-form fieldset {
+  margin: 0; padding: 10px; border: 1px solid #e7e7ed; border-radius: 7px;
+}
+
+.flag-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;
+}
+
+.flag-option {
+  display: flex !important; grid-template-columns: none !important; align-items: center; gap: 7px !important;
+  color: #67667b !important; font-size: 10px !important; font-weight: 400 !important;
+}
+
+.flag-option input {
+  accent-color: #377a83;
+}
+
+.emergency-note {
+  display: flex; align-items: flex-start; gap: 8px; padding: 10px; border: 1px solid #f0dcaa;
+  border-radius: 6px; background: #fff7e8; color: #86692b; font-size: 10px; line-height: 1.5;
+}
+
+.emergency-note svg {
+  flex: none;
+}
+
+.triage-aside {
+  padding: 20px;
+}
+
+.aside-icon {
+  display: grid; place-items: center; width: 40px; height: 40px; border-radius: 9px; background: #e8f6f6;
+  color: #258e9b;
+}
+
+.triage-aside h2 {
+  margin: 15px 0 7px; color: #302f49; font: 700 15px Manrope,sans-serif;
+}
+
+.triage-aside>p {
+  color: #767587; font-size: 11px; line-height: 1.6;
+}
+
+.aside-info {
+  display: flex; gap: 8px; margin-top: 17px; padding: 11px; border-radius: 6px; background: #f5f8f8;
+  color: #687a80; font-size: 10px; line-height: 1.5;
+}
+
+.aside-info svg {
+  flex: none; color: #438b90;
+}
+
+.disclaimer {
+  margin-top: 16px; padding-top: 12px; border-top: 1px solid #eeeef1; color: #8f8e9c; font-size: 9px;
+  line-height: 1.5;
+}
+
+.triage-result .icon-button {
+  position: absolute; top: 10px; right: 10px;
+}
+
+.triage-result h2 {
+  margin: 5px 0; color: #387b83; font: 700 17px Manrope,sans-serif;
+}
+
+.triage-result.urgent h2 {
+  color: #ae514a;
+}
+
+.triage-result p {
+  max-width: 700px; margin: 0; color: #666579; font-size: 11px; line-height: 1.5;
+}
+
+.triage-form .button-primary {
+  justify-self: start;
+}
+
+@media (max-width:760px) {
+  .triage-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .triage-aside {
+    order: 2;
+  }
+
+}
+
+@media (max-width:480px) {
+  .flag-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.triage-result {
+  position: relative; margin: 15px 20px 0; padding: 15px; border: 1px solid #d6e8e8; border-radius: 8px;
+  background: #f7fbfb; margin-top: 20px;
+}
+
+.triage-result.urgent {
+  border-color: #f0c9c3; border: 1px solid #e8b6ae; background: #fff0ec; color: #893d31;
+}
+
+@media (max-width:760px) {
+  .triage-layout {
+    grid-template-columns: 1fr;
+  }
+
+}
+

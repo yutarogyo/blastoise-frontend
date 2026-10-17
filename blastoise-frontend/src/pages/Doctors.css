@@ -1,0 +1,477 @@
+.directory-hero {
+  position: relative; display: grid; grid-template-columns: 1.2fr 0.8fr; min-height: 270px; overflow: hidden;
+  margin: 0 0 30px; padding: 35px 39px; border-radius: 14px; background: #e1efeb;
+}
+
+.directory-art { position: relative; min-height: 210px; }
+
+/* Doctors.css: styles for the matching screen or shared components. */
+
+.available-tag i {
+  width: 7px; height: 7px; border-radius: 50%; background: #46a878;
+}
+
+.doctor-symbol {
+  display: grid; place-items: center; width: 38px; height: 38px; border-radius: 9px; background: #fff;
+  color: #328b94;
+}
+
+.specialty {
+  color: #258b93; font-size: 11px; font-weight: 600;
+}
+
+.doctor-detail {
+  display: flex; gap: 8px; align-items: flex-start; margin: 12px 0 0; color: #78848b; font-size: 10px;
+  line-height: 1.5;
+}
+
+.doctor-detail svg {
+  flex: none; color: #6f9b91;
+}
+
+.doctor-bottom small {
+  display: block; color: #8a8999; font-size: 9px;
+}
+
+.doctor-bottom b {
+  display: block; margin-top: 4px; color: #35344b; font-size: 15px;
+}
+
+.doctor-card .button-outline:hover {
+  border-color: #9ccdd0; background: #fff;
+}
+
+@media (max-width:1100px) {
+  .doctor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width:760px) {
+  .doctor-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (max-width:480px) {
+  .doctor-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.directory-copy {
+  position: relative; z-index: 1;
+}
+
+.directory-copy h2 {
+  margin: 12px 0 9px; color: #302f46; font: 800 calc(clamp(30px, 3.2vw, 43px))/1.08 Manrope,sans-serif;
+  letter-spacing: -1.7px;
+}
+
+.directory-copy h2 em {
+  color: #268d94; font-style: normal;
+}
+
+.directory-copy p {
+  margin: 0 0 21px; color: #737989; font-size: 13px;
+}
+
+.directory-search {
+  display: flex; align-items: center; gap: 10px; width: min(100%, 490px); height: 48px; padding: 0 14px;
+  border: 1px solid #d5e6e6; border-radius: 8px; background: #fff; color: #64848a;
+  box-shadow: 0 5px 18px #406d7410;
+}
+
+.directory-search input {
+  flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; color: #36354b; font-size: 12px;
+}
+
+.directory-search span {
+  font-size: 0;
+}
+
+.directory-search span:after {
+  content: "↵"; font-size: 15px; color: #80999c;
+}
+
+.art-circle {
+  position: absolute; display: block; border-radius: 50%;
+}
+
+.art-circle-one {
+  width: 230px; height: 230px; right: 12%; top: -15px; background: #a7d9d8;
+}
+
+.art-circle-two {
+  width: 172px; height: 172px; right: 21%; top: 25px; background: linear-gradient(145deg, #fff, #f7fcfb 70%);
+  box-shadow: 0 16px 35px #357d7620;
+}
+
+.art-cross {
+  right: 27%; top: 37px; color: #48b4b0; font: 300 75px/1 Manrope,sans-serif; position: absolute;
+}
+
+.art-heart {
+  position: absolute; right: 34%; top: 91px; color: #318c93;
+}
+
+.art-caption {
+  position: absolute; right: 2%; bottom: 0; padding: 10px 15px; border: 1px solid #d3e9e6; border-radius: 8px;
+  background: #fffffff0; color: #367b80; font: 700 12px/1.35 Manrope,sans-serif;
+  box-shadow: 0 9px 25px #234f4e12;
+}
+
+.directory-results {
+  margin: 0 0 30px;
+}
+
+.specialty-section {
+  margin: 0 0 30px;
+}
+
+.section-title {
+  display: flex; justify-content: space-between; align-items: flex-end; gap: 14px; margin: 0 0 15px;
+}
+
+.section-title h2 {
+  margin: 5px 0 0; color: #302f46; font: 700 20px Manrope,sans-serif; letter-spacing: -0.6px;
+}
+
+.demo-notice {
+  display: flex; align-items: center; gap: 6px; color: #858495; font-size: 10px;
+}
+
+.result-count {
+  display: flex; align-items: center; gap: 6px; color: #858495; font-size: 10px;
+}
+
+.demo-notice svg {
+  color: #498b85;
+}
+
+.specialty-chip {
+  display: flex; align-items: center; gap: 9px; flex: 0 0 auto; padding: 7px 12px 7px 7px;
+  border: 1px solid #e4e7e9; border-radius: 8px; background: #fff; color: #5b5b6d; font-size: 11px;
+  transition: 0.15s;
+}
+
+.specialty-icon {
+  display: grid; place-items: center; width: 32px; height: 32px; border-radius: 7px; background: #edf7f5;
+  color: #3f8e8a;
+}
+
+.specialty-icon-1 {
+  background: #f2f0fb; color: #7774ad;
+}
+
+.specialty-icon-2 {
+  background: #fbf2ea; color: #b58050;
+}
+
+.specialty-icon-3 {
+  background: #edf3fc; color: #6284ac;
+}
+
+.specialty-icon-4 {
+  background: #f8eef3; color: #aa6e8a;
+}
+
+.specialty-icon-5 {
+  background: #fdf4e8; color: #b38b4f;
+}
+
+.doctor-initials {
+  display: grid; place-items: center; width: 100%; height: 100%; color: #4c8186; font-size: 16px;
+  font-weight: 700;
+}
+
+.directory-card .button-outline {
+  padding: 9px 11px; font-size: 10px;
+}
+
+@media (max-width:850px) {
+  .directory-hero {
+    grid-template-columns: 1fr; min-height: 250px; padding: 28px;
+  }
+
+  .directory-art {
+    position: absolute; right: 0; bottom: 0; width: 38%; min-height: 150px; opacity: 0.65;
+  }
+
+  .directory-copy {
+    max-width: 78%;
+  }
+
+  .art-circle-one {
+    width: 150px; height: 150px; right: 2%; top: 10px;
+  }
+
+  .art-circle-two {
+    width: 110px; height: 110px; right: 16%; top: 32px;
+  }
+
+  .art-cross {
+    right: 21%; top: 29px; font-size: 55px;
+  }
+
+  .art-heart {
+    right: 31%; top: 72px;
+  }
+
+  .art-heart svg {
+    width: 37px;
+  }
+
+  .art-caption {
+    right: 0;
+  }
+
+  .doctor-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+@media (max-width:560px) {
+  .directory-hero {
+    min-height: 285px; padding: 23px;
+  }
+
+  .directory-copy {
+    max-width: 100%;
+  }
+
+  .directory-copy h2 {
+    font-size: 31px;
+  }
+
+  .directory-copy p {
+    max-width: 260px;
+  }
+
+  .directory-art {
+    width: 34%; opacity: 0.28;
+  }
+
+  .section-title {
+    align-items: flex-start; flex-direction: column;
+  }
+
+  .section-title h2 {
+    font-size: 18px;
+  }
+
+}
+
+.directory-feedback {
+  display: flex; align-items: center; gap: 9px; margin: 0 0 15px; padding: 12px 14px;
+  border: 1px solid #cfe5d9; border-radius: 7px; background: #f0f9f3; color: #3b7652; font-size: 11px;
+}
+
+.doctor-card:hover {
+  transform: translateY(-3px); box-shadow: 0 12px 26px #25243f12; border-color: #d4e6e5;
+}
+
+.specialty-chip:hover {
+  border-color: #78b9b8; background: #eff8f7; color: #347d80; transform: translateY(-1px);
+}
+
+.specialty-chip.selected {
+  border-color: #78b9b8; background: #eff8f7; color: #347d80; box-shadow: 0 2px 8px #35858d14;
+}
+
+.doctor-grid .doctor-card {
+  animation: cardRise 0.42s cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+
+.doctor-grid .doctor-card:nth-child(2) {
+  animation-delay: 0.04s;
+}
+
+.doctor-grid .doctor-card:nth-child(3) {
+  animation-delay: 0.08s;
+}
+
+.doctor-grid .doctor-card:nth-child(4) {
+  animation-delay: 0.12s;
+}
+
+.doctor-grid .doctor-card:nth-child(5) {
+  animation-delay: 0.16s;
+}
+
+.doctor-grid .doctor-card:nth-child(6) {
+  animation-delay: 0.2s;
+}
+
+.doctor-grid .doctor-card:nth-child(7) {
+  animation-delay: 0.24s;
+}
+
+.doctor-grid .doctor-card:nth-child(8) {
+  animation-delay: 0.28s;
+}
+
+.doctor-grid .doctor-card:nth-child(9) {
+  animation-delay: 0.32s;
+}
+
+
+
+.directory-art { opacity: 0.75; }
+
+.doctor-grid {
+  display: grid; gap: 15px; grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.doctor-card {
+  padding: 17px; overflow: hidden;
+}
+
+.doctor-top {
+  align-items: center; justify-content: space-between; position: relative; display: block;
+}
+
+.doctor-avatar {
+  place-items: center; color: #4d8c91; overflow: hidden; display: block; width: 100%; height: 190px;
+  border-radius: 12px; background: #e8eeec;
+}
+
+.doctor-photo {
+  display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 28%; border-radius: 0;
+}
+
+.available-tag {
+  display: flex; align-items: center; gap: 6px; color: #43877d; position: absolute; bottom: 10px; left: 10px;
+  background: #fff; padding: 6px 9px; border-radius: 6px; font-size: 10px;
+}
+
+.doctor-card h2 {
+  margin: 15px 0 4px; font: 700 15px Manrope,sans-serif; font-size: 17px;
+}
+
+.doctor-bottom {
+  display: flex; align-items: flex-end; justify-content: space-between; margin-top: 16px; padding-top: 13px;
+  border-top: 1px solid #edf0f1; gap: 10px; flex-wrap: wrap;
+}
+
+.doctor-bottom .button-outline {
+  width: 100%; justify-content: center; background: #f0f8f5; border-color: #b6d8cd; color: #186458;
+}
+
+.specialty-list {
+  display: flex; gap: 9px; overflow-x: auto; padding: 2px 1px 8px; scrollbar-width: thin; max-width: 100%;
+}
+
+@media (min-width:761px) and (max-width:1150px) {
+  .doctor-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .directory-art {
+    display: none;
+  }
+
+}
+
+@media (max-width:760px) {
+  .directory-art {
+    display: none;
+  }
+
+  .doctor-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .doctor-avatar {
+    height: 170px;
+  }
+
+  .doctor-card {
+    padding: 14px;
+  }
+
+  .doctor-card h2 {
+    font-size: 15px;
+  }
+
+  .doctor-detail {
+    font-size: 11px;
+  }
+
+  .directory-hero {
+    padding: 25px;
+  }
+
+  .directory-copy {
+    width: 100%;
+  }
+
+  .directory-copy h2 {
+    font-size: 31px;
+  }
+
+}
+
+@media (max-width:440px) {
+  .doctor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-avatar {
+    height: 230px;
+  }
+
+}
+
+.doctor-card.directory-card {
+  display: flex; flex-direction: column; padding: 20px;
+}
+
+.directory-card .doctor-top {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+}
+
+.directory-card .doctor-avatar {
+  background: #e9f5f5; display: block; flex: 0 0 80px; width: 80px; height: 80px; overflow: hidden;
+  border-radius: 14px;
+}
+
+.directory-card .doctor-photo {
+  display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 25%;
+}
+
+.directory-card .available-tag {
+  position: static; display: inline-flex; align-items: center; gap: 6px; flex-shrink: 0; margin: 0;
+  padding: 7px 10px; border: 1px solid #d5e9df; border-radius: 20px; background: #eef8f2; color: #326854;
+  font-size: 10px; font-weight: 500; white-space: nowrap;
+}
+
+.directory-card h2 {
+  margin-top: 13px; margin: 16px 0 6px; font-family: Arial,sans-serif; font-size: 16px; font-weight: 600;
+  line-height: 1.4; letter-spacing: normal;
+}
+
+.directory-card .specialty {
+  font-size: 12px; font-weight: 500; line-height: 1.5;
+}
+
+.directory-card .doctor-detail {
+  align-items: flex-start; font-size: 12px; line-height: 1.6;
+}
+
+.directory-card .doctor-detail svg {
+  flex-shrink: 0; margin-top: 2px;
+}
+
+.directory-card .doctor-bottom {
+  align-items: center; margin-top: auto; padding-top: 16px;
+}
+
+.directory-card .doctor-bottom b {
+  font-size: 16px; font-weight: 600;
+}
+

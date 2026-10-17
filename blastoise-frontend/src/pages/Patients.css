@@ -1,0 +1,82 @@
+/* Patients.css: styles for the matching screen or shared components. */
+
+.table-person {
+  display: flex; align-items: center; gap: 9px;
+}
+
+.table-person i {
+  display: grid; place-items: center; width: 27px; height: 27px; border-radius: 50%; background: #e8f4f4;
+  color: #4c8186; font-size: 9px; font-style: normal; font-weight: 700;
+}
+
+.table-person b {
+  font-weight: 600;
+}
+
+.patient-form {
+  grid-template-columns: 1fr 1fr; gap: 12px 14px;
+}
+
+.patient-form>.form-row {
+  grid-column: 1/-1;
+}
+
+.patient-form>.form-section-label {
+  grid-column: 1/-1;
+}
+
+.patient-form>.modal-actions {
+  grid-column: 1/-1;
+}
+
+.patient-form>.modal-note {
+  grid-column: 1/-1;
+}
+
+.patient-form>label {
+  grid-column: 1/-1;
+}
+
+.patient-form .form-row {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+}
+
+.patient-form label>span {
+  display: inline;
+}
+
+@media (max-width:560px) {
+  .patient-form {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-form .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .patient-form>.form-row {
+    grid-column: auto;
+  }
+
+  .patient-form>.form-section-label {
+    grid-column: auto;
+  }
+
+  .patient-form>label {
+    grid-column: auto;
+  }
+
+  .patient-form>.form-section-label:first-child {
+    grid-column: 1/-1;
+  }
+
+  .patient-form>.modal-actions {
+    grid-column: 1/-1;
+  }
+
+  .patient-form>.modal-note {
+    grid-column: 1/-1;
+  }
+
+}
+

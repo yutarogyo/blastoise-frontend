@@ -1,0 +1,95 @@
+/* Billing.css: styles for the matching screen or shared components. */
+
+.invoice-id {
+  color: #5f7180; font-weight: 600;
+}
+
+.billing-strip {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 18px; padding: 17px 20px;
+  border: 1px solid #dce9e8; border-radius: 9px; background: #edf6f5;
+}
+
+.billing-strip>div+div {
+  padding-left: 20px; border-left: 1px solid #d8e6e3;
+}
+
+.billing-strip small {
+  color: #71858a; font-size: 10px;
+}
+
+.billing-strip strong {
+  display: block; margin-top: 7px; color: #35344a; font: 700 20px Manrope,sans-serif;
+}
+
+@media (max-width:760px) {
+  .billing-strip strong {
+    font-size: 17px;
+  }
+
+}
+
+.invoice-link {
+  border: 0; background: none; padding: 4px 0; color: #166c63; font-weight: 700; text-decoration: underline;
+  text-underline-offset: 3px; text-align: left;
+}
+
+.invoice-banner {
+  display: flex; justify-content: space-between; align-items: center; gap: 15px;
+}
+
+.invoice-banner h2 {
+  font-size: 22px; margin: 10px 0;
+}
+
+.invoice-address {
+  display: flex; justify-content: space-between; gap: 15px; align-items: flex-start; margin: 24px 0;
+  font-size: 13px; line-height: 1.7;
+}
+
+.invoice-address small {
+  color: #6c8487;
+}
+
+.invoice-address h3 {
+  margin: 7px 0;
+}
+
+.invoice-total {
+  display: flex; justify-content: space-between; align-items: center; gap: 15px; margin: 25px 0;
+  padding: 18px; background: #edf6f2; border-radius: 8px;
+}
+
+.invoice-total strong {
+  font-size: 22px;
+}
+
+.invoice-document table {
+  min-width: 0; width: 100%;
+}
+
+.invoice-document td {
+  white-space: normal; padding: 12px 8px;
+}
+
+.invoice-document th {
+  white-space: normal; padding: 12px 8px;
+}
+
+@media (max-width:760px) {
+  .invoice-banner {
+    align-items: flex-start; flex-direction: column;
+  }
+
+  .invoice-address {
+    gap: 10px;
+  }
+
+}
+
+@media (max-width:440px) {
+  .invoice-address {
+    flex-direction: column;
+  }
+
+}
+

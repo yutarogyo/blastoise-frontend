@@ -1,0 +1,12 @@
+/* Style index. Edit the matching file below instead of adding overrides here. */
+@import "./styles/base.css";
+@import "./components/Shared.css";
+@import "./components/Layout.css";
+@import "./pages/Dashboard.css";
+@import "./pages/Doctors.css";
+@import "./pages/Patients.css";
+@import "./pages/Billing.css";
+@import "./pages/Triage.css";
+@import "./Login.css";
+@import "./styles/motion.css";
+@import "./styles/print.css";

@@ -1,0 +1,46 @@
+/* print.css: styles for the matching screen or shared components. */
+
+@media print {
+  .modal-backdrop,body {
+    background: #fff !important;
+  }
+
+  .main-area,.modal-head,.no-print,.sidebar {
+    display: none !important;
+  }
+
+  .modal-backdrop {
+    position: static !important; display: block !important; padding: 0 !important;
+  }
+
+  .invoice-document tr,.modal,.modal-backdrop {
+    animation: none !important;
+  }
+
+  .modal {
+    width: 100% !important; max-width: none !important; max-height: none !important;
+    overflow: visible !important; border: 0 !important; box-shadow: none !important;
+  }
+
+  .modal-form {
+    padding: 0 !important;
+  }
+
+  .invoice-document {
+    color: #000 !important;
+  }
+
+  .invoice-document table {
+    min-width: 0 !important;
+  }
+
+  .invoice-document .table-scroll {
+    overflow: visible !important;
+  }
+
+  @page {
+  }
+
+}
+
+@page { margin: 18mm; }
