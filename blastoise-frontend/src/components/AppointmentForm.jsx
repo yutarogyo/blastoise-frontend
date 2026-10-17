@@ -54,7 +54,7 @@ export default function AppointmentForm() {
               <option>Online consultation</option>
             </select>
           </label>
-          <p className="modal-note">Demo only: this request is not sent or booked with a real provider.</p>
+          <p className="modal-note">This request is not sent or booked with a real provider.</p>
           <div className="modal-actions">
             <button className="button-outline" type="button" onClick={() => setModal("")}>
               Cancel

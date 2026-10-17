@@ -95,7 +95,7 @@ export default function Sidebar() {
           <span className="user-avatar">BC</span>
           <span>
             <b>Clinic administrator</b>
-            <small>Demo workspace</small>
+            <small>Workspace</small>
           </span>
         </div>
       </div>

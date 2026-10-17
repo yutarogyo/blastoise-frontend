@@ -79,7 +79,7 @@ export default function InvoiceForm() {
             />
           </label>
           <strong>Total: {peso(Number(invoiceAmount) * Number(invoiceQuantity))}</strong>
-          <p className="modal-note">Demo only: this invoice is not sent or saved to a server.</p>
+          <p className="modal-note">this invoice is not sent or saved to a server.</p>
           <div className="modal-actions">
             <button className="button-outline" type="button" onClick={() => setModal("")}>
               Cancel

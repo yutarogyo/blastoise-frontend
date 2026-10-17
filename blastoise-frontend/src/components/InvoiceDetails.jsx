@@ -57,13 +57,13 @@ export default function InvoiceDetails({ invoice, patient, onPaid }) {
           <strong>{peso(invoice.amount)}</strong>
         </div>
         <p className="modal-note">
-          Demo invoice only · Not an official tax invoice or proof of payment. No taxes or discounts applied.
+          Not an official tax invoice or proof of payment. No taxes or discounts applied.
         </p>
       </div>
       <div className="modal-actions no-print">
         {invoice.status !== "Paid" && (
           <button className="button-outline" onClick={onPaid}>
-            Mark paid (demo)
+            Mark paid
           </button>
         )}
         <button className="button-primary" onClick={() => window.print()}>
